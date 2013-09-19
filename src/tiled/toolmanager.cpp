@@ -30,39 +30,6 @@
 using namespace Tiled;
 using namespace Tiled::Internal;
 
-namespace {
-
-/**
- * A tool bar that emits a signal when the application language changes.
- */
-class ToolBar : public QToolBar
-{
-    Q_OBJECT
-
-public:
-    ToolBar(QWidget *parent = 0)
-        : QToolBar(parent)
-    {}
-
-signals:
-    void languageChanged();
-
-protected:
-    void changeEvent(QEvent *event)
-    {
-        QToolBar::changeEvent(event);
-        switch (event->type()) {
-        case QEvent::LanguageChange:
-            emit languageChanged();
-            break;
-        default:
-            break;
-        }
-    }
-};
-
-} // anonymous namespace
-
 ToolManager *ToolManager::mInstance = 0;
 
 ToolManager *ToolManager::instance()
@@ -232,4 +199,4 @@ void ToolManager::setSelectedTool(AbstractTool *tool)
     }
 }
 
-#include "toolmanager.moc"
+//#include "toolmanager.moc"

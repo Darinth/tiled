@@ -1,6 +1,6 @@
 include(../../tiled.pri)
 
-TEMPLATE = lib
+TEMPLATE = vclib
 TARGET = tiled
 target.path = $${LIBDIR}
 INSTALLS += target

@@ -2,6 +2,7 @@ build
 bin
 lib/tiled/plugins/*
 lib/*.so*
+lib/
 Makefile*
 *.o
 *.qm
@@ -11,6 +12,12 @@ ui_*.h
 *.pro.user*
 qrc_*
 docs/html
+src/libtiled/debug
+src/tiled/debug
+src/libtiled/tiled.sdf
+src/tiled/tiled.sdf
+tiled.ilk
+tiled.pdb
 
 # Build artifacts on Windows
 tiled.exe

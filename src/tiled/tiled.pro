@@ -2,7 +2,7 @@ include(../../tiled.pri)
 include(../libtiled/libtiled.pri)
 include(../qtpropertybrowser/src/qtpropertybrowser.pri)
 
-TEMPLATE = app
+TEMPLATE = vcapp
 TARGET = tiled
 target.path = $${PREFIX}/bin
 INSTALLS += target
