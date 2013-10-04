@@ -18,6 +18,8 @@ src/libtiled/tiled.sdf
 src/tiled/tiled.sdf
 tiled.ilk
 tiled.pdb
+*.suo
+*.opensdf
 
 # Build artifacts on Windows
 tiled.exe
