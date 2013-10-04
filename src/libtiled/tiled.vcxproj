@@ -100,7 +100,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(GnuWin32)\include;$(QTDirectory)\include;$(QTDirectory)\include\QtGui;$(QTDirectory)\include\QtANGLE;$(QTDirectory)\include\QtCore;debug;$(QTDirectory)\mkspecs\win32-msvc2012;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\zlib;$(QTDirectory)\include;$(QTDirectory)\include\QtGui;$(QTDirectory)\include\QtANGLE;$(QTDirectory)\include\QtCore;debug;$(QTDirectory)\mkspecs\win32-msvc2012;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
       <AssemblerListingLocation>debug\</AssemblerListingLocation>
       <BrowseInformation>false</BrowseInformation>
